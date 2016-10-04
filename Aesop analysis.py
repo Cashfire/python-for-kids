@@ -26,7 +26,7 @@ for k in uniquelowcase:
 top= sorted(uniquedict.iteritems(), key= lambda (k,v): v, reverse= True)[:10]    # items are (k,v) pairs.
 top  # top is a list now
 
-# Plot the ranking of top 10 most-used words
+# Plot a bar chart for the ranking of top 10 most-used words
 import numpy as np
 import matplotlib.pyplot as plt 
 x= np.arrange(len(top))
