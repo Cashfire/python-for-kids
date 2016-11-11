@@ -42,3 +42,9 @@ Dictionary
 # dict_values([28, 23, 35, 19, 31, 40])
 >>> dic.get("Fred")
 #28
+>>> 'Alex' in dic
+# True
+>>> 28 in dic
+# False
+>>> 28 in dic.values()
+# True
