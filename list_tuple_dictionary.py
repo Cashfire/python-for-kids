@@ -32,9 +32,13 @@ and reassign its value back to that tuple.
 '''
 Dictionary
 '''
->>> dic = {'Alex': 23, 'Chris': 31, 'Fred': 28, 'Heather': 40, 'Judy': 35, 'Sam': 19}
+>>> ages = [28, 23, 35, 19, 31, 40]
+>>> dic = {k:v for (k,v) in zip(names, ages)}
 >>> dic
-#{'Fred': 28, 'Alex': 23, 'Judy': 35, 'Sam': 19, 'Chris': 31, 'Heather': 40} Notice the order
+{'Fred': 35, 'Alex': 28, 'Judy': 31, 'Sam': 40, 'Chris': 23, 'Heather': 19}
+# Notice: the dictionary order
+>>> dic = {'Alex': 23, 'Chris': 31, 'Fred': 28, 'Heather': 40, 'Judy': 35, 'Sam': 19}
+>>> dic  #{'Fred': 28, 'Alex': 23, 'Judy': 35, 'Sam': 19, 'Chris': 31, 'Heather': 40} 
 >>> dic.keys()
 # dict_keys(['Fred', 'Alex', 'Judy', 'Sam', 'Chris', 'Heather'])
 >>> ages = dic.values()
