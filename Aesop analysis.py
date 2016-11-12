@@ -1,10 +1,10 @@
 
 # How many words in aesop?
-aesopfile=open("aesop.txt")
-aesoptext=aesopfile.read()
-aesopfile.close()
-aesoptowords=aesoptext.split()  #split with no arguments splits on whitespace
-len(aesopwords)
+with open("aesop.txt") as aesopfile:
+    aeaesoptext=aesopfile.read()  ## if use with, we do not need to close the file by aesopfile.close()
+    aesoptowords=aesoptext.split()  #split with no arguments splits on whitespace
+    print len(aesopwords)
+
 # Or you can use with syntax and the closing will be automatically done.
 With open("aesop.txt") as aesopfile:
   aesoptext= aesopfile.read()
