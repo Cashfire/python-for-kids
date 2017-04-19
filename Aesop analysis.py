@@ -5,11 +5,7 @@ with open("aesop.txt") as aesopfile:
     aesoptowords=aesoptext.split()  #split with no arguments splits on whitespace
     print len(aesopwords)
 
-# Or you can use with syntax and the closing will be automatically done.
-With open("aesop.txt") as aesopfile:
-  aesoptext= aesopfile.read()
-  aesopwords= aesoptest.split()
-  print len(aesopwords)
+# Or you can use with syntax and the closing will be automatically done
   
 # How many times that "wolf" appears in aesop?
 lowcase= [word.lower() for word in aesopwords]
